@@ -20,10 +20,37 @@
   <!-- <link rel="stylesheet" href="css/css.min.css"> -->
 </head>
 <body>
-
   <!-- LOADER  -->
   <div class="loader-wrapper js-loader">
     <span class="loader"></span>
+  </div>
+
+  <!-- SECTION-GAME-ZONE -->
+  <section class="section-game-zone">
+    <div class="section-game-zone__container container">
+      <div class="section-game-zone__status">
+        <span id="randomArithmetic" class="section-game-zone-random-arithmetic">4 % 4</span>
+        <div class="section-game-zone__score-time">
+        <span class="section-game-zone__correct  badge">👌 - <span id="correct">0</span></span>
+        <span id="time" class="section-game-zone__time badge">7</span>
+        <span class="section-game-zone__wrong badge">🥴 - <span id="wrong">0</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- OVERLAY--WELCOME -->
+  <div id="overlayWelcome" class="overlay overlay--welcome">
+    <div class="overlay__container container">
+      <div class="overlay__content">
+        <h1 class="overlay__title">Hi kid</h1>
+        <p class="overlay__description">Funny arithmetic game for 5-15 aged children. Play and check your speed of thinking. Click to start</p>
+        <button  id="startGame" class="overlay__button button">Start game</button>
+      </div>
+    </div>
   </div>
 
 
