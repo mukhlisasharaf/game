@@ -5,7 +5,21 @@
 }
 
 /* FONT-FACE  */
+@font-face {
+  font-family: "Gilroy Light";
+  src: url(../fonts/gilroy-extra-bold.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Gilroy Extra Bold";
+  src: url(../fonts/gilroy-extra-bold.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
 /* LOADER  */
 .loader-wrapper {
   display: flex;
@@ -46,6 +60,10 @@
 
 
 /* GLOBAL-STYLES  */
+* {
+  /* textlarni hech narsani belgilab bo'lmaydi user-select:; yordamida */
+  user-select: none; 
+}
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -65,7 +83,7 @@ body {
   height: 100%;
   background-color: var(--white);
   color: var(--black);
-  font-family: "Arial", sans-serif;
+  font-family: "Gilroy Light", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 0;
@@ -80,7 +98,7 @@ img {
 
 /* FOCUS-STYLES  */
 *:focus {
-  outline: 0.3rem dashed var(--black);
+  outline: none;
   outline-offset: 0.3rem;
 }
 
